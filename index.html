@@ -7,6 +7,9 @@
 
 	body{
 		font-family: sans-serif;
+		background-color: black;
+		padding-top: 10%;
+
 	}
 
 	#calculator{
@@ -16,13 +19,14 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,.8);
         margin: 15px auto;
-        
+
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 5px;
         grid-template-rows: auto repeat(5, 40px);
+				width: 20%;
 	}
-		
+
 
 	button{
 		padding: .25em;
@@ -35,7 +39,7 @@
         background-image: linear-gradient(#c5c5c5, #e0e0e0);
         box-shadow: inset 3px 2px 0 white;
         margin-bottom: 15px;
-        
+
         grid-column: 1 / -1;
 	}
 
@@ -43,7 +47,7 @@
 		background-color: #adadad;
         grid-row: 5 / 7;
         grid-column: 4 / 5;
-        
+
 	}
 
 	.zero{
@@ -58,29 +62,27 @@
 
 	<div id="calculator">
 		<div id="display">0</div>
-		
-		<button onclick="cleanner()">AC</button> 
-		<button onclick="percent()">%</button> 
-		<button onclick="startCalculation('*')">x</button> 
-		<button onclick="startCalculation('/')">/</button> 
-		<button onclick="includeDigit('7')">7</button> 
-		<button onclick="includeDigit('8')">8</button> 
-		<button onclick="includeDigit('9')">9</button> 
-		<button onclick="finishCalculation()">=</button>
-		<button onclick="includeDigit('4')">4</button> 
-		<button onclick="includeDigit('5')">5</button> 
-		<button onclick="includeDigit('6')">6</button>  
-		<button onclick="startCalculation('-')">-</button> 
-		<button onclick="includeDigit('1')">1</button> 
-		<button onclick="includeDigit('2')">2</button> 
-		<button onclick="includeDigit('3')">3</button> 
-		<button onclick="startCalculation('+')" class="mais">+</button>
-        <button class="zero" onclick="includeDigit('0')">0</button> 
-        <button onclick="includePoint()">,</button> 
-		
-	</div>
 
-<!--	<img src="https://static.webshopapp.com/shops/038765/files/063260238/geeek-bamboo-wooden-calculator-calculator.jpg" style="width: 250px">-->
+		<button onclick="cleanner()">AC</button>
+		<button onclick="percent()">%</button>
+		<button onclick="startCalculation('*')">x</button>
+		<button onclick="startCalculation('/')">/</button>
+		<button onclick="includeDigit('7')">7</button>
+		<button onclick="includeDigit('8')">8</button>
+		<button onclick="includeDigit('9')">9</button>
+		<button onclick="finishCalculation()">=</button>
+		<button onclick="includeDigit('4')">4</button>
+		<button onclick="includeDigit('5')">5</button>
+		<button onclick="includeDigit('6')">6</button>
+		<button onclick="startCalculation('-')">-</button>
+		<button onclick="includeDigit('1')">1</button>
+		<button onclick="includeDigit('2')">2</button>
+		<button onclick="includeDigit('3')">3</button>
+		<button onclick="startCalculation('+')" class="mais">+</button>
+        <button class="zero" onclick="includeDigit('0')">0</button>
+        <button onclick="includePoint()">,</button>
+
+	</div>
 <script src="./js/index.js" charset="utf-8"></script>
 </body>
 </html>
